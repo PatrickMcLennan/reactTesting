@@ -7,7 +7,6 @@ afterEach(cleanup);
 test('<Counter />', () => {
   const { debug, getByTestId } = render(<Counter />);
   const counterButton = getByTestId('counter-button');
-  debug();
 
   expect(counterButton.textContent).toBe('0');
   expect(counterButton.tagName).toBe('BUTTON');
